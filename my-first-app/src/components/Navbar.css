@@ -16,9 +16,6 @@
     color: #f5e6c8;
     font-family: "Miniver", cursive;
 }
-.navbar-logo:hover{
-    color: #c9914a;
-}
 .navbar-logo span {
     color: #c9914a;
 }
@@ -31,6 +28,11 @@
 .navbar-links a{
     text-decoration: none;
     color: #fff;
+    transition: 0.3s ease;
+    font-family: "poppins", sans-serif;
+}
+.navbar-links a:hover{
+    color: #c9914a;
 }
  
 @media (max-width: 768px) {
