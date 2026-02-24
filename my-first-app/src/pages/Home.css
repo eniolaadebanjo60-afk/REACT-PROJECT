@@ -5,6 +5,7 @@
 }
 
 .hero{
+    position: relative;
     height: 500px;
     text-align: center;
     padding: 200px 20px;
@@ -13,6 +14,19 @@
     background-size: cover;
     color: #f5e6c8;
 }
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.hero h1, .hero p, .hero-btn {
+    position: relative;
+    z-index: 1;
+}
 .hero h1{
     font-size: 48px;
     margin-bottom: 20px;
@@ -20,7 +34,8 @@
     color: #fff;
 }
 .hero h1 span{
-    color: wheat;
+    color: #c9914a;
+    font-family: "Bungee", sans-serif;
 }
 .hero p{
     color: #fff;
@@ -45,17 +60,60 @@
 }
 
 .hero-abt{
+    background-color: #fff;
     font-family: 'Poppins',sans-serif;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
-.hero-abt h1{
+.abt-text h1{
     text-align: center;
     padding: 20px;
     font-size: 48px;
 }
-.hero-abt p{
-    font-size: 15px;
+.abt-text h1 span{
+    color: #a8712e;
+}
+.abt-text h1::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 7px;
+    border-radius: 15px;
+    background-color: #c9914a;
+    margin: 10px auto;
+}
+.abt-text p{
+    font-size: 18px;
+}
+.abt-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+    gap: 40px;
+    border: 0.5px solid;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.abt-img img{
+    border-radius: 50%;
+}
+
+.abt-ceo h2{
+    font-size: 30px;
+}
+.abt-ceo p{
+    color: #c9914a;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: italic;
+    margin: 50px auto;
 }
 
 @media (max-width: 768px) {
@@ -64,5 +122,36 @@
     }
     .hero p{
         font-size: 15px;
+    }
+    .abt-img{
+        flex-direction: column;
+        width: 40%;
+        height: 20%;
+    }
+    .abt-img img{
+        width: 100px;
+        height: 100px;
+    }
+    .abt-ceo h2{
+        font-size: 20px;
+    }
+    .abt-ceo p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1024px) {
+    .abt-img {
+        width: 90%;
+        height: 90%;
+    }
+    .abt-img img{
+        width: 200px;
+        height: 200px;
+    }
+    .abt-ceo h2{
+        font-size: 25px;
+    }
+    .abt-ceo p{
+        font-size: 18px;
     }
 }

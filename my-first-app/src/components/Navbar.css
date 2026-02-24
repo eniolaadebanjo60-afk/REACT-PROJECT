@@ -18,6 +18,7 @@
 }
 .navbar-logo span {
     color: #c9914a;
+    font-family: 'Miniver', cursive;
 }
 .navbar-links{
     display: flex;
@@ -33,6 +34,17 @@
 }
 .navbar-links a:hover{
     color: #c9914a;
+}
+.navbar-links a::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    margin: 5px auto;
+    transition: 0.3s ease;
+}
+.navbar-links a:hover::after{
+    background-color: #c9914a;
 }
  
 @media (max-width: 768px) {
