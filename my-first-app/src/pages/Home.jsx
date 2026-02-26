@@ -63,6 +63,18 @@ function Home(){
                     </div>
                 </div>
             </div>
+
+            <div className='hero-contact'>
+                <h2>Get in touch with us</h2>
+                <p>Help us help you</p>
+                <form className='contact-form'>
+                    <input type='text' placeholder='Your Name' />
+                    <input type='tel' placeholder='Your phone number' />
+                    <input type='email' placeholder='Your Email Address' />
+                    <textarea placeholder='Your concern'></textarea>
+                    <button type='submit'>Send Your Message</button>
+                </form>
+            </div>
         </div>
     )
 }
