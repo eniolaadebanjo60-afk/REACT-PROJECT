@@ -36,7 +36,7 @@ function Footer() {
             </div>
 
             <div className='footer-bottom'>
-                <p>© 2024 Brew & Bloom. All rights reserved.</p>
+                <p>© 2026 Brew & Bloom. All rights reserved.</p>
             </div>
         </footer>
     )
