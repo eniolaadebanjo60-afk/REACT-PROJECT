@@ -18,9 +18,9 @@ function Home(){
             <div className='hero-abt'>
                 <div className='abt-text'>
                     <h1>About <span>Us</span></h1>
-                    <p>Brew & Bloom was founded in 2018 by two coffee lovers 
+                    <p>Brew & Bloom was founded in 2018 by a coffee lover 
                     who believed that a great cup of coffee could make any day better.</p>
-                    <p>We source our beans from local farmers, roast them with care and serve every cup with love. 
+                    <p>Our beans is sourced from local farmers, we roast them with care and serve every cup with love. 
                     Come in, sit down and bloom with us.</p>
                 </div>
 
