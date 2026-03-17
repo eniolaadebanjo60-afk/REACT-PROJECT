@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    background-color: #0d0d1a;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.home h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.home h1 span{
+    color: #ff6b00;
+}
+
+.match-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.match-card {
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    padding: 15px 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #2a2a4a;
+    transition: background 0.2s ease;
+}
+
+.match-card:hover {
+    background-color: #222244;
+    border-color: #ff6b00;
+}
+
+.league-name {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    background-color: #12122a;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    width: 100%;
+    text-align: center;
+}
+
+.match-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.match-info h3 {
+    font-size: 13px;
+    color: #ffffff;
+    width: 100px;
+    text-align: center;
+}
+
+.score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6b00;
+    text-align: center;
+    min-width: 60px;
+}
+
+.match-status {
+    font-size: 11px;
+    color: #fff;
+    background-color: #ff6b00;
+    padding: 3px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.loading p{
+    color: #fff;
+}
+.loading, .error {
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+    font-size: 16px;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .home {
+        padding-top: 120px;
+    }
+    .match-card {
+        width: 160px;
+        padding: 10px 12px;
+    }
+    .match-info h3 {
+        font-size: 10px;
+        width: 60px;
+    }
+    .score {
+        font-size: 14px;
+        min-width: 30px;
+    }
+    .match-status {
+        font-size: 10px;
+    }
+    .league-name {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+}
+

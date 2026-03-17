@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fixtures{
+    padding: 20px 40px;
+    background-color: #0d0d1a;
+    min-height: 100vh;
+}
+.fixtures h1{
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    padding: 20px;
+}
+.league-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.match-info h3, p{
+    color: #fff;
+}
+.match-info p{
+    font-size: 14px;
+}
+.league-selector select {
+    padding: 10px 20px;
+    border: 2px solid #ff6b00;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff6b00;
+    color: #fff;
+    outline: none;
+}
+
+.date-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.date-picker label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a2e;
+}
+
+.date-picker input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #ff6b00;
+    color: #fff;
+    outline: none;
+}
+
+.date-picker input:hover {
+    background-color: #ff6b00;
+    border: none;
+    transition: 0.3s ease;
+}
+@media (max-width: 768px) {
+    .fixtures {
+        padding: 120px 15px 20px;
+    }
+    .fixtures h1 {
+        font-size: 24px;
+    }
+    .league-selector select {
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+    .date-picker input {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+    .match-card {
+        width: 160px;
+        padding: 10px 12px;
+    }
+    .match-info h3 {
+        font-size: 10px;
+        width: 60px;
+    }
+    .score {
+        font-size: 14px;
+    }
+}

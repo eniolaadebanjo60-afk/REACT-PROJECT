@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.3) 100%),url('/football-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+}
+.hero-content {
+    max-width: 600px;
+}
+.hero-content h1 {
+    font-size: 58px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.hero-content h1 span {
+    color: #ff6b00;
+}
+.hero-content p {
+    font-size: 18px;
+    color: #aaaacc;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.hero-btn {
+    background-color: #ff6b00;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.hero-btn:hover {
+    background-color: #dd630b;
+    transform: scale(1.05);
+}
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px 20px;
+    background-color: #000;
+    flex-wrap: wrap;
+}
+
+.stats-item {
+    text-align: center;
+}
+
+.stats-item h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #ff6b00;
+}
+
+.stats-item p {
+    font-size: 13px;
+    color: #aaaacc;
+    margin-top: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.featured-leagues {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.featured-leagues h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+.featured-leagues h2 span {
+    color: #ff6b00;
+}
+
+.leagues-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.league-card {
+    background: #ff6b00;
+    border: none;
+    border-radius: 15px;
+    padding: 25px 20px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.league-card:hover {
+    transform: translateY(-6px);
+}
+
+.league-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.league-card p {
+    font-size: 13px;
+    color: #000;
+    font-weight: 700;
+}
+.quick-nav {
+    padding: 70px 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+.quick-nav h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.quick-nav h2 span {
+    color: #ff6b00;
+}
+
+.nav-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-card {
+    background-color: #ff6b00;
+    border: 1px solid #2a2a4a;
+    border-radius: 15px;
+    padding: 35px 25px;
+    width: 200px;
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-card:hover {
+    transform: translateY(-6px);
+    border-color: #ff6b00;
+}
+
+.nav-card .icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.nav-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.nav-card p {
+    font-size: 12px;
+    color: #000;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 25px 40px;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .hero-content p {
+        font-size: 15px;
+    }
+    .hero-btn {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+    .stats {
+        gap: 30px;
+        padding: 40px 20px;
+    }
+    .stats-item h2 {
+        font-size: 30px;
+    }
+    .stats-item p {
+        font-size: 11px;
+    }
+    .featured-leagues {
+        padding: 40px 15px;
+    }
+    .featured-leagues h2 {
+        font-size: 24px;
+    }
+    .league-card {
+        width: 110px;
+        padding: 18px 12px;
+    }
+    .league-card img {
+        width: 45px;
+        height: 45px;
+    }
+    .quick-nav {
+        padding: 40px 15px;
+    }
+    .quick-nav h2 {
+        font-size: 24px;
+    }
+    .nav-card {
+        width: 150px;
+        padding: 25px 15px;
+    }
+    .nav-card .icon {
+        font-size: 28px;
+    }
+    .nav-card h3 {
+        font-size: 14px;
+    }
+}
+
+
