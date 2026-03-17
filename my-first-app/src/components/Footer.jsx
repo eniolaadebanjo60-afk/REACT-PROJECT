@@ -10,8 +10,8 @@ function Footer() {
                 <div className='footer-logo'>
                     <h2>Brew & <span>Bloom</span></h2>
                     <p>123 Bloom Street, Coffee Town</p>
-                    <p>Tel: +1 234 567 8900</p>
-                    <p>hello@brewandbloom.com</p>
+                    <a href="tel: +1 234 567 8900">Tel: +1 234 567 8900</a>
+                    <a href="mailto:hello@brewandbloom.com">hello@brewandbloom.com</a>
                 </div>
 
                 <div className='footer-links'>

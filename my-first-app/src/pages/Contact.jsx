@@ -10,8 +10,8 @@ function Contact(){
             <div className="contact-page">
                 <div className="contact-text">
                     <p>Address: 123 Bloom Street, Coffee Town</p>
-                    <p>Tel: +1 234 567 8900</p>
-                    <p>Email: hello@brewandbloom.com</p>
+                    <a href="tel: +1 234 567 8900">Tel: +1 234 567 8900</a>
+                    <a href="mailto:hello@brewandbloom.com">hello@brewandbloom.com</a>
                     <p>Opening Hours (Weekdays): Mondays - Fridays (7am - 4pm)</p>
                     <p>Opening Hours (Weekends): Saturday - Sunday (9am - 6pm) </p>
                 </div>

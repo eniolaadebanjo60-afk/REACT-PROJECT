@@ -11,12 +11,13 @@
     justify-content: space-between;
     width: 100%;
 }
-.navbar-logo{
+.navbar h2 a{
+    text-decoration: none;
     font-size: 30px;
     color: #f5e6c8;
     font-family: "Miniver", cursive;
 }
-.navbar-logo span {
+.navbar h2 a span {
     color: #c9914a;
     font-family: 'Miniver', cursive;
 }

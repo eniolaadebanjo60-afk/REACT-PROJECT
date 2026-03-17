@@ -22,6 +22,11 @@
     margin-top: 50px;
     font-weight: bold;
 }
+.contact-text a{
+    text-decoration: none;
+    display: flex;
+    color: #000;
+}
 .social-links{
     padding: 20px 10px;
     display: flex;
