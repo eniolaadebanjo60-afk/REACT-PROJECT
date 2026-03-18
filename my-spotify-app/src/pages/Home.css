@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.3) 100%), url('/headphones.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.home-content{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+}
+.home-left{
+    max-width: 600px;
+}
+
+.home-left h1{
+    font-size: 58px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-transform: uppercase
+    
+}
+.home-left h2{
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-right: 300px;
+}
+.home-left h2 span{
+    color: green;
+}
+.home-left p{
+    font-size: 18px;
+    color: #aaaacc;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+.home-left a{
+    text-decoration: none;
+    background-color: green;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+.home-left a:hover {
+    background-color: #dd630b;
+    transform: scale(1.05);
+}
+
+.stat {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px 20px;
+    background-color: #000;
+    flex-wrap: wrap;
+}
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #ff6b00;
+}
+
+.stat-item p {
+    font-size: 13px;
+    color: #aaaacc;
+    margin-top: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.home-left h1 {
+    animation: fadeInLeft 1s ease forwards;
+}
+
+.home-left h2 {
+    animation: fadeInLeft 1.3s ease forwards;
+}
+
+.home-left p {
+    animation: fadeInLeft 1.6s ease forwards;
+}
+
+.home-left a {
+    animation: fadeInLeft 1.9s ease forwards;
+}
+
+.stat-item {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.home-left a:hover {
+    animation: pulse 0.6s ease infinite;
+}

@@ -1,0 +1,218 @@
+/* MINI PLAYER */
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.player-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.player-left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.player-track-info h4 {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+.player-track-info p {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.player-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    max-width: 500px;
+}
+
+.play-pause {
+    background: none;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s ease;
+}
+
+.play-pause:hover {
+    border-color: #1db954;
+    color: #1db954;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    appearance: none;
+    background-color: #535353;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.progress-bar:hover::-webkit-slider-thumb {
+    background-color: #1db954;
+}
+
+.player-right {
+    display: flex;
+    align-items: center;
+}
+
+.expand-btn {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.expand-btn:hover {
+    color: #1db954;
+}
+
+/* EXPANDED PLAYER */
+.player-expanded {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #121212 0%, #1a1a2e 100%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'Segoe UI', sans-serif;
+    animation: slideUp 0.3s ease forwards;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%) }
+    to { transform: translateY(0) }
+}
+
+.minimize-btn {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.minimize-btn:hover {
+    color: #ffffff;
+}
+
+.expanded-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.player-expanded h2 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.player-expanded p {
+    font-size: 15px;
+    color: #b3b3b3;
+    text-align: center;
+}
+
+.album-name {
+    font-size: 13px !important;
+    color: #535353 !important;
+}
+
+.expanded-progress {
+    width: 300px !important;
+}
+
+.play-pause.large {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    border-color: #1db954;
+    color: #1db954;
+}
+
+.preview-tag {
+    font-size: 12px !important;
+    color: #535353 !important;
+}
+
+@media (max-width: 768px) {
+    .player {
+        padding: 10px 15px;
+    }
+    .player-left {
+        width: 140px;
+    }
+    .player-left img {
+        width: 40px;
+        height: 40px;
+    }
+    .player-track-info h4 {
+        font-size: 12px;
+    }
+    .player-track-info p {
+        font-size: 10px;
+    }
+    .expanded-img {
+        width: 220px;
+        height: 220px;
+    }
+    .expanded-progress {
+        width: 220px !important;
+    }
+}
