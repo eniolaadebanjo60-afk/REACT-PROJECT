@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { RiArrowUpSLine, RiArrowDownSLine } from 'react-icons/ri'
+import { FaPlay, FaPause } from 'react-icons/fa'
 import './Player.css'
 
 function Player({ currentTrack }){
@@ -66,7 +67,7 @@ function Player({ currentTrack }){
                         className='progress-bar expanded-progress'
                     />
                     <button className='play-pause large' onClick={togglePlay}>
-                        {isPlaying ? '⏸' : '▶'}
+                        {isPlaying ? <FaPause/> : <FaPlay/>}
                     </button>
                     <p className='preview-tag'>30 Second Preview</p>
                 </div>

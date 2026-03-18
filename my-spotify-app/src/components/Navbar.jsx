@@ -5,7 +5,7 @@ function Navbar (){
     return(
         <nav className="nav-bar">
             <div className="navbar-logo">
-                <Link to='/'>Music<span>Corner🎵</span></Link>
+                <Link to='/'>Music<span>Corner</span></Link>
             </div>
             <div className="navbar-links">
                 <Link to='/'>Home</Link>
