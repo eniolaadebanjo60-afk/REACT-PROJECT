@@ -144,18 +144,26 @@
 }
 
 @media (max-width: 768px) {
-    .home {
+    .search {
         padding: 80px 15px 120px;
     }
     .search-section input {
-        width: 220px;
+        width: 200px;
         font-size: 13px;
+        padding: 12px 15px;
     }
     .search-section button {
         padding: 12px 18px;
         font-size: 13px;
     }
-    .track-card img {
+    .track-card {
+        padding: 8px 10px;
+    }
+    .track-image {
+        width: 45px;
+        height: 45px;
+    }
+    .track-image img {
         width: 45px;
         height: 45px;
     }

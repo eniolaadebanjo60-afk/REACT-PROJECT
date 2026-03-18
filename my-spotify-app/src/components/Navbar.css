@@ -43,15 +43,18 @@
     color: #1db954;
 }
 
-
 @media (max-width: 768px) {
-    .navbar {
+    .nav-bar {
         padding: 12px 15px;
     }
-    .navbar-logo h1 {
-        font-size: 18px;
+    .navbar-logo a {
+        font-size: 22px;
     }
     .navbar-links {
         gap: 15px;
     }
+    .navbar-links a {
+        font-size: 12px;
+    }
 }
+
