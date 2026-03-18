@@ -85,7 +85,7 @@ function Player({ currentTrack }){
                     </div>
                     <div className='player-center'>
                         <button className='play-pause' onClick={togglePlay}>
-                            {isPlaying ? '⏸' : '▶'}
+                            {isPlaying ? <FaPause/> : <FaPlay/>}
                         </button>
                         <input
                             type='range'
