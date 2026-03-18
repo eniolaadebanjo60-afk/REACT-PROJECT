@@ -18,6 +18,7 @@
 }
 
 .navbar-logo a {
+    text-decoration: none;
     color: #1db954;
     font-size: 34px;
 }
