@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { RiArrowUpSLine, RiArrowDownSLine } from 'react-icons/ri'
 import './Player.css'
 
 function Player({ currentTrack }){
@@ -48,12 +49,10 @@ function Player({ currentTrack }){
                 onEnded={() => setIsPlaying(false)}
             />
 
-            {/* EXPANDED PLAYER */}
+
             {isExpanded && (
                 <div className='player-expanded'>
-                    <button className='minimize-btn' onClick={() => setIsExpanded(false)}>
-                        ▼ Minimize
-                    </button>
+                    <button className='minimize-btn' onClick={() => setIsExpanded(false)}><RiArrowDownSLine size={24} /></button>
                     <img src={currentTrack.artworkUrl100.replace('100x100', '600x600')} alt={currentTrack.trackName} className='expanded-img'/>
                     <h2>{currentTrack.trackName}</h2>
                     <p>{currentTrack.artistName}</p>
@@ -69,11 +68,11 @@ function Player({ currentTrack }){
                     <button className='play-pause large' onClick={togglePlay}>
                         {isPlaying ? '⏸' : '▶'}
                     </button>
-                    <p className='preview-tag'>🎵 30 Second Preview</p>
+                    <p className='preview-tag'>30 Second Preview</p>
                 </div>
             )}
 
-            {/* MINI PLAYER */}
+        
             {!isExpanded && (
                 <div className='player'>
                     <div className='player-left' onClick={() => setIsExpanded(true)}>
@@ -97,7 +96,9 @@ function Player({ currentTrack }){
                         />
                     </div>
                     <div className='player-right'>
-                        <button className='expand-btn' onClick={() => setIsExpanded(true)}>▲</button>
+                       <button className='expand-btn' onClick={() => setIsExpanded(true)}>
+                            <RiArrowUpSLine size={24} />
+                        </button>
                     </div>
                 </div>
             )}

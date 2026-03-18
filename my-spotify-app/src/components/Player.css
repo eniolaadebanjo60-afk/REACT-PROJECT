@@ -1,4 +1,4 @@
-/* MINI PLAYER */
+
 .player {
     position: fixed;
     bottom: 0;
@@ -208,11 +208,20 @@
     .player-track-info p {
         font-size: 10px;
     }
+    .player-center {
+        max-width: 150px;
+    }
     .expanded-img {
         width: 220px;
         height: 220px;
     }
     .expanded-progress {
         width: 220px !important;
+    }
+    .player-expanded h2 {
+        font-size: 18px;
+    }
+    .player-expanded p {
+        font-size: 13px;
     }
 }
