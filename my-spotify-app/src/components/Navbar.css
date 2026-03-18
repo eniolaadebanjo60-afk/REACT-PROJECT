@@ -17,11 +17,11 @@
     z-index: 999;
 }
 
-.navbar-logo h1 {
+.navbar-logo a {
     color: #1db954;
     font-size: 34px;
 }
-.navbar-logo h1 span{
+.navbar-logo a span{
     color: #ffffff;
 }
 
