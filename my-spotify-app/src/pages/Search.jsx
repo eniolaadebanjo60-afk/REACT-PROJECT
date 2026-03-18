@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { FaPlay, FaPause } from 'react-icons/fa'
 import './Search.css'
 
 function Search ({setCurrentTrack}){
@@ -73,7 +74,7 @@ function Search ({setCurrentTrack}){
                     >
                         <div className='track-image'>
                             <img src={track.artworkUrl100} alt={track.trackName} />
-                            <div className='play-overlay'>▶</div>
+                            <div className='play-overlay'><FaPlay/></div>
                         </div>
                         <div className='track-info'>
                             <h3>{track.trackName}</h3>
