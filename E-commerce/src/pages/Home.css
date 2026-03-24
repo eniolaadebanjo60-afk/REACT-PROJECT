@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.3) 100%),url('head.jpg');
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+.hero-content{
+    margin-top: 300px;
+}
+.hero-content h2, h1, p{
+    color: #fff;
+    line-height: 1.8;
+}
+.hero-content h2{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.hero-content h2 span{
+    color: red;
+}
+.hero-content p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+.hero-content a{
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px 30px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+.hero-content a:hover{
+    color: #fff;
+    background-color: red;
+}
+
+.about{
+    padding: 40px;
+}
+.about h1{
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+}
+.about h1 span{
+    color: red;
+}
+.about-card p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #000;
+}

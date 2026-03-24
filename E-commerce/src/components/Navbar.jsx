@@ -5,14 +5,17 @@ import './Navbar.css'
 function Navbar() {
     return(
         <nav className="navbar">
-            <h2><Link to='/'>Brew & <span>Bloom</span></Link></h2>
+            <h2><Link to='/'>ShopWithBjay</Link></h2>
             <div className="navbar-links">
                 <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
                 <Link to="/shop">Shop</Link>
-                <Link to="/contact">Contact Us</Link>  
-                <Link to="/cart">{FaShoppingCart}</Link>
+                <Link to="/contact">Contact Us</Link> 
             </div>
+            <div className="navbar-cart">
+                <Link to="/cart"><FaShoppingCart /></Link>                
+            </div>     
+                
+            
         </nav>
     )
 }

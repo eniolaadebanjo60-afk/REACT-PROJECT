@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SN Pro", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+}
+.navbar h2 a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+}
+.navbar-links{
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+.navbar-links a{
+    text-decoration: none; 
+    color: #000;
+    transition: 0.3s ease;
+}
+.navbar-links a:hover{
+    color: orange;
+}
+
+.navbar-cart a{
+    color: #000;
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar-links a{
+        font-size: 15px;
+    }
+    .navbar h2 a{
+        font-size: 18px;
+    }
+    .navbar-cart a{
+        font-size: 15px;
+    }
+}
